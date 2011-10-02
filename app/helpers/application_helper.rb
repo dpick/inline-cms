@@ -4,7 +4,7 @@ module ApplicationHelper
 
     text_object.update_attributes(:value => default_value) if text_object.value.nil?
 
-    return content_tag(:div, text_object.value) if current_user.nil? || !current_user.admin?
+    return content_tag(:div, text_object.value) unless current_user.try(:admin?)
 
     content_tag(:div, text_object.value, :class => 'edit_area', :id => text_object.key)
   end
