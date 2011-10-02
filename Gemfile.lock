@@ -28,6 +28,7 @@ GEM
       activemodel (= 3.0.8)
       activesupport (= 3.0.8)
     activesupport (3.0.8)
+    addressable (2.2.6)
     arel (2.0.10)
     bcrypt-ruby (3.0.1)
     builder (2.1.2)
@@ -66,12 +67,19 @@ GEM
       activesupport (~> 3.0)
       haml (~> 3.0)
       railties (~> 3.0)
+    heroku (2.8.4)
+      launchy (>= 0.3.2)
+      rest-client (~> 1.6.1)
+      rubyzip
+      term-ansicolor (~> 1.0.5)
     i18n (0.5.0)
     jquery-rails (1.0.14)
       railties (~> 3.0)
       thor (~> 0.14)
     json (1.6.1)
     json_pure (1.6.1)
+    launchy (2.0.5)
+      addressable (~> 2.2.6)
     mail (2.2.19)
       activesupport (>= 2.3.6)
       i18n (>= 0.4.0)
@@ -100,6 +108,8 @@ GEM
       rake (>= 0.8.7)
       thor (~> 0.14.4)
     rake (0.9.2)
+    rest-client (1.6.7)
+      mime-types (>= 1.16)
     rspec (2.6.0)
       rspec-core (~> 2.6.0)
       rspec-expectations (~> 2.6.0)
@@ -140,6 +150,7 @@ DEPENDENCIES
   devise
   haml (>= 3.0.0)
   haml-rails
+  heroku
   jquery-rails
   rails (= 3.0.8)
   rspec-rails (>= 2.0.1)
