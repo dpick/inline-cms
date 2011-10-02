@@ -1,3 +1,3 @@
 $(document).ready(function() {
-  $('.edit').editable('');
+  $('.edit').editable('textobject/save');
 });
