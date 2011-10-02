@@ -4,6 +4,6 @@ module HomeHelper
 
     text_object.update_attributes(:value => default_value) if text_object.value.nil?
 
-    content_tag(:div, text_object.value, :class => 'edit', :id => text_object.key)
+    content_tag(:div, text_object.value, :class => 'edit_area', :id => text_object.key)
   end
 end
