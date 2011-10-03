@@ -9,4 +9,5 @@ Cms::Application.routes.draw do
   end
 
   match 'textobject/save' => 'text_object#save'
+  match 'admin' => 'admin#index'
 end
