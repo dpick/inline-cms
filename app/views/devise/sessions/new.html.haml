@@ -1,37 +1,30 @@
-.container
-  %section#login
+.container#login
+  %section
     .page-header
       %h1
         Login
         %small 
-    .row
-      .span4
-        %p
-          = render :partial => "devise/shared/links"
-      .span12
-        = form_for(resource, :as => resource_name, :url => session_path(resource_name)) do |f|
-          %fieldset
-            .clearfix
-              = f.label :email
-              .input
-                = f.email_field :email
-            .clearfix
-              = f.label :password
-              .input
-                = f.password_field :password
-            .clearfix
-              %label#optionsCheckboxes List of options
-              .input
-                %ul.inputs-list
-                  %li
-                    %label
-                      = f.check_box :remember_me
-                      Remember me?
-                %span.help-block
-                  %strong Note:
-                  We do not store your information or sell it to anyone. 
-          .actions
-            %button.btn.large.primary{:type => "submit"}> Login
-            \ 
-            %button.btn.large{:type => "reset"} Cancel
+    .content
+      = form_for(resource, :as => resource_name, :url => session_path(resource_name)) do |f|
+        %fieldset
+          .clearfix
+            = f.label :email
+            .input
+              = f.email_field :email
+          .clearfix
+            = f.label :password
+            .input
+              = f.password_field :password
+          .clearfix
+            %label#optionsCheckboxes List of options
+            .input
+              %ul.inputs-list
+                %li
+                  %label
+                    = f.check_box :remember_me
+                    Remember me?
+        .actions
+          %button.btn.large.primary{:type => "submit"}> Login
+          \ 
+          %button.btn.large{:type => "reset"} Cancel
 
