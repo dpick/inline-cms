@@ -1,9 +1,11 @@
 body {
+  font-family: proxima-nova-1, proxima-nova-2, Helvetica Neue, Helvetica, Arial;
   background-color: #fff;
   position: relative;
+  font-size: 1.6em;
 }
 section {
-  padding-top: 20px;
+  padding-top: 70px;
 }
 section > .row {
   margin-bottom: 10px;
@@ -17,8 +19,8 @@ section > .row {
   border-top: 1px solid #e5e5e5;
   -webkit-box-shadow: inset 0 5px 15px rgba(0,0,0,.025);
      -moz-box-shadow: inset 0 5px 15px rgba(0,0,0,.025);
-/*          box-shadow: inset 0 5px 15px rgba(0,0,0,.025);
-*/}
+          box-shadow: inset 0 5px 15px rgba(0,0,0,.025);
+}
 .footer p {
   color: #555;
 }

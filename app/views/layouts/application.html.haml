@@ -6,9 +6,13 @@
 
     %title Admin
     = stylesheet_link_tag :all
+
     = csrf_meta_tag
     %meta{:content => "width=device-width,initial-scale=1", :name => "viewport"}/
 
+    %script{:src => "http://use.typekit.com/dnd0nfy.js", :type => "text/javascript"}
+    :javascript
+      try{Typekit.load();}catch(e){}
   %body
     - if flash[:notice]
       %div{:class => 'alert-message warning data-alert'}
@@ -21,4 +25,3 @@
     = javascript_include_tag :all
     = javascript_include_tag "jquery.jeditable.mini.js"
     = javascript_include_tag "bootstrap.js"
-    = javascript_include_tag "bootstrap-alerts.js"

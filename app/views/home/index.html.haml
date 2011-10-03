@@ -10,9 +10,17 @@
         %li
           %a{:href => "#"} Blog
         %li
-          %a{:href => "#"} Gallery
-        %li
           %a{:href => "#"} Users
+        %li.dropdown{"data-dropdown" => "dropdown"}
+          %a.dropdown-toggle{:href => "#"} Dropdown
+          %ul.dropdown-menu
+            %li
+              %a{:href => "#"} Secondary link
+            %li
+              %a{:href => "#"} Something else here
+            %li.divider
+            %li
+              %a{:href => "#"} Another link
 
 .container
   %section#about
@@ -20,7 +28,43 @@
       %h1
         Dashboard
         %small 
-
+    .row
+      .span4
+        %h2 Sidebar info
+        %p
+          Look at me, I'm a sidebar. I'll have useful information here someday when I grow up to be big and strong.
+      .span12
+        %form{:action => ""}
+          %fieldset
+            .clearfix
+              %label{:for => "xlInput3"} X-Large input
+              .input
+                %input#xlInput3.xlarge{:name => "xlInput3", :size => "30", :type => "text"}/
+          %fieldset
+            .clearfix.error
+              %label{:for => "xlInput4"} X-Large input
+              .input
+                %input#xlInput4.xlarge.error{:name => "xlInput4", :size => "30", :type => "text"}/
+                %span.help-inline Small snippet of help text
+            .clearfix
+              %label#optionsCheckboxes List of options
+              .input
+                %ul.inputs-list
+                  %li
+                    %label
+                      %input{:name => "optionsCheckboxes", :type => "checkbox", :value => "option1"}/
+                      %span Option one is this and that—be sure to include why it’s great
+                  %li
+                    %label
+                      %input{:name => "optionsCheckboxes", :type => "checkbox", :value => "option2"}/
+                      %span Option two can also be checked and included in form results
+                %span.help-block
+                  %strong Note:
+                  Labels surround all the options for much larger click areas and a more usable form.
+          .actions
+            %button.btn.large.primary{:type => "submit"}> Save changes
+            \ 
+            %button.btn.large{:type => "reset"} Cancel
 %footer.footer
   .container
     %p.pull-right
