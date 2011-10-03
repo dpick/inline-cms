@@ -1,1 +1,32 @@
-= text_for(:test)
+.topbar
+  .topbar-inner
+    .container
+      %a.brand{:href => "#"}
+        %strong CMS
+        Admin
+      %ul.nav
+        %li.active
+          %a{:href => "#"} Dashboard  
+        %li
+          %a{:href => "#"} Blog
+        %li
+          %a{:href => "#"} Gallery
+        %li
+          %a{:href => "#"} Users
+
+.container
+  %section#about
+    .page-header
+      %h1
+        Dashboard
+        %small 
+
+%footer.footer
+  .container
+    %p.pull-right
+      %a{:href => "#"} Back to top
+    %p
+      Developed by
+      %a{:href => "http://twitter.com/brousalis", :target => "_blank"} @brousalis
+      by
+      %a{:href => "http://twitter.com/davidpick", :target => "_blank"} @davidpick
