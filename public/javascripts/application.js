@@ -1,6 +1,6 @@
 $(document).ready(function() {
-  $(".alert-message").alert()
-
+  $(".alert-message").alert();
+  $(".topbar").dropdown();
   $('.edit').editable('textobject/save', {
     indicator : 'Saving...',
     tooltip   : 'Click to edit...',
