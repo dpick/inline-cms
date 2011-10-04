@@ -17,4 +17,5 @@ $(document).ready(function() {
     submit    : 'OK',
     tooltip   : 'Click to edit...',
   });
+
 });

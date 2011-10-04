@@ -42,11 +42,12 @@ section > .row {
           border-radius: 4px;
 }
 #login {width:477px;}
-#login h1 img {width:16px;opacity:0.2}
+#login h1 img {width:16px;opacity:0.2;margin-right:6px;}
 #login section {padding-top:270px}
 #login button {width:100px;margin-left:8px;}
 #login .sidebar{position:absolute;}
 #login .content{}
-#login label, #login a, #login input {font-size:16px;line-height:26px;}
-#login input {font:14px proxima-nova-1,proxima-nova-2 !important;color:#555;padding:9px 7px 7px;}
+#login label, #login a, #login input {font-size:17px;line-height:26px;}
+#login label.remember_me {width:138px;}
+#login input {font:16px proxima-nova-1,proxima-nova-2 !important;color:#555;padding:9px 7px 7px;}
 #login label {width:126px;}
