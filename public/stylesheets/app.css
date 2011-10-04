@@ -41,8 +41,11 @@ section > .row {
      -moz-border-radius: 4px;
           border-radius: 4px;
 }
-#login {width:600px;}
+#login {width:480px;}
+#login section {padding-top:270px}
+#login button {float:right;width:100px;margin-left:8px;}
 #login .sidebar{position:absolute;}
 #login .content{}
 #login label, #login a, #login input {font-size:16px;}
-#login input{padding:6px 5px;}
+#login .input input {font-size: 13px !important}
+#login .actions{padding-bottom:45px;}

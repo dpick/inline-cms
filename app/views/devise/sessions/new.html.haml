@@ -16,13 +16,10 @@
             .input
               = f.password_field :password
           .clearfix
-            %label#optionsCheckboxes List of options
             .input
-              %ul.inputs-list
-                %li
-                  %label
-                    = f.check_box :remember_me
-                    Remember me?
+              %label
+                = f.check_box :remember_me
+                %span Remember me?
         .actions
           %button.btn.large.primary{:type => "submit"}> Login
           \ 
