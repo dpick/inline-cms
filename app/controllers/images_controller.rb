@@ -1,6 +1,6 @@
 class ImagesController < ApplicationController
   def upload_to_imgur
-    path = File.join(Rails.root, "tmp/images/#{Time.now}.#{params[:file].original_filename.split(".").last}")
+    path = File.join(Rails.root, "tmp/#{Time.now}.#{params[:file].original_filename.split(".").last}")
 
     File.open(path, "wb") { |f| f.write(params['file'].tempfile.read) }
 
