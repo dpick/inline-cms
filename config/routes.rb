@@ -1,4 +1,7 @@
 Cms::Application.routes.draw do
+  get "images/upload_to_imgur"
+  post "images/upload_to_imgur"
+
   root :to => "home#index"
 
   get "home/index"

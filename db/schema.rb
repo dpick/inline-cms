@@ -10,7 +10,16 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20111002175248) do
+ActiveRecord::Schema.define(:version => 20111013022154) do
+
+  create_table "images", :force => true do |t|
+    t.string   "original"
+    t.string   "small_thumbnail"
+    t.string   "large_thumbnail"
+    t.string   "delete_url"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
 
   create_table "text_objects", :force => true do |t|
     t.string   "key"
