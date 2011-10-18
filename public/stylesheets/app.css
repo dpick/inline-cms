@@ -25,6 +25,10 @@ section > .row {
   color: #555;
 }
 
+.hero-unit {
+  margin-top: 60px;
+}
+
 .topbar-wrapper {
   position: relative;
   height: 40px;
