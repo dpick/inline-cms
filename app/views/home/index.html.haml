@@ -1,8 +1,56 @@
-Nothing to see here, move along.
+.topbar
+  .topbar-inner
+    .container
+      %a.brand{:href => "#"}
+        %strong PRS
+        Dialysis
+      %ul.nav
+        %li.active
+          %a{:href => "#"} About Us  
+        %li
+          %a{:href => "#"} Products and Services
+        %li
+          %a{:href => "#"} Partner With Us
+        %li
+          %a{:href => "#"} Resources
+        %li
+          %a{:href => "#"} FAQs
+        %li
+          %a{:href => "#"} Contact Us
 
-= text_for :test
-
-= form_tag 'images/upload_to_imgur', :multipart => true do
-  = label_tag 'file'
-  = file_field_tag 'file'
-  = submit_tag 'upload file'
+.container
+  .hero-unit
+    %h1
+      Hello World
+    %p
+      Vestibulum id ligula porta felis euismod semper. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.
+    %a.btn.primary.large{:href => "#"} Learn More
+  .row
+    .span6
+      %h2
+        heading 1
+      %p
+        Etiam porta sem malesuada magna mollis euismod. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.
+      %a.btn{:href => "#"} View Details
+    .span5
+      %h2
+        heading 2
+      %p
+        Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.
+      %a.btn{:href => "#"} View Details
+    .span4
+      %h2
+        heading 3
+      %p
+        Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.
+      %a.btn{:href => "#"} View Details
+        
+%footer.footer
+  .container
+    %p.pull-right
+      %a{:href => "#"} Back to top
+    %p
+      Developed by
+      %a{:href => "http://twitter.com/brousalis", :target => "_blank"} @brousalis
+      and
+      %a{:href => "http://twitter.com/davidpick", :target => "_blank"} @davidpick
