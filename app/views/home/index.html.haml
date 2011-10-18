@@ -11,8 +11,13 @@
           %a{:href => "#"} Products and Services
         %li
           %a{:href => "#"} Partner With Us
-        %li
-          %a{:href => "#"} Resources
+        %li.dropdown{"data-dropdown" => "dropdown"}
+          %a.dropdown-toggle{:href => "#"} Resources
+          %ul.dropdown-menu
+            %li
+              %a{:href => "#"} For Patients
+            %li
+              %a{:href => "#"} For Professionals
         %li
           %a{:href => "#"} FAQs
         %li
@@ -26,7 +31,7 @@
       %a.btn.primary.large Learn more »
   .row
     .span6
-      %h2 Heading
+      %h2 Our Mission
       %p Etiam porta sem malesuada magna mollis euismod. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.
       %p
         %a.btn{:href => "#"} View details »
