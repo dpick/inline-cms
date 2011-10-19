@@ -13,4 +13,9 @@ Cms::Application.routes.draw do
 
   match 'textobject/save' => 'text_object#save'
   match 'admin' => 'admin#index'
+  match 'about/us' => 'home#about_us'
+  match 'products' => 'home#products'
+  match 'partners' => 'home#partners'
+  match 'faqs' => 'home#faqs'
+  match 'contact' => 'home#contact'
 end

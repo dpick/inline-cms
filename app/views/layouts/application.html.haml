@@ -18,6 +18,31 @@
       %div{:class => 'alert-message warning data-alert'}
         %a{:href => '#', :class => 'close'}='x'
         = flash[:notice]
+
+    .topbar
+      .topbar-inner
+        .container
+          %a.brand{:href => "/"}
+            %strong PRS
+            Dialysis
+          %ul.nav
+            %li.active
+              %a{:href => "/about/us"} About Us  
+            %li
+              %a{:href => "/products"} Products and Services
+            %li
+              %a{:href => "/partners"} Partner With Us
+            %li.dropdown{"data-dropdown" => "dropdown"}
+              %a.dropdown-toggle{:href => "#"} Resources
+              %ul.dropdown-menu
+                %li
+                  %a{:href => "#"} For Patients
+                %li
+                  %a{:href => "#"} For Professionals
+            %li
+              %a{:href => "/faqs"} FAQs
+            %li
+              %a{:href => "/contact"} Contact Us
     
     = yield
 
