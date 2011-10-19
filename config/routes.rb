@@ -18,4 +18,6 @@ Cms::Application.routes.draw do
   match 'partners' => 'home#partners'
   match 'faqs' => 'home#faqs'
   match 'contact' => 'home#contact'
+  match 'patients' => 'home#patients'
+  match 'professionals' => 'home#professionals'
 end
