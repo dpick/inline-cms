@@ -29,6 +29,14 @@ section > .row {
   margin-top: 60px;
 }
 
+.about-us {
+  margin-top: 60px;
+  background-color: #eee;
+  text-shadow: 0 1px 0 #fff;
+  border-top: 1px solid #e5e5e5;
+  padding: 30px 0;
+}
+
 .aboutus {
   margin-top: 60px;
   background-color: #f5f5f5;
