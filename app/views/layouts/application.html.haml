@@ -22,27 +22,27 @@
     .topbar
       .topbar-inner
         .container
-          %a.brand{:href => "/"}
+          %a.brand.transition{:href => "/"}
             %strong PRS
             Dialysis
           %ul.nav
             %li
-              %a{:href => "/about/us"} About Us  
+              %a.transition{:href => "/about/us"} About Us  
             %li
-              %a{:href => "/products"} Products and Services
+              %a.transition{:href => "/products"} Products and Services
             %li
-              %a{:href => "/partners"} Partner With Us
+              %a.transition{:href => "/partners"} Partner With Us
             %li.dropdown{"data-dropdown" => "dropdown"}
-              %a.dropdown-toggle{:href => "#"} Resources
+              %a.dropdown-toggle.transition{:href => "#"} Resources
               %ul.dropdown-menu
                 %li
-                  %a{:href => "patients"} For Patients
+                  %a.transition{:href => "patients"} For Patients
                 %li
-                  %a{:href => "professionals"} For Professionals
+                  %a.transition{:href => "professionals"} For Professionals
             %li
-              %a{:href => "/faqs"} FAQs
+              %a.transition{:href => "/faqs"} FAQs
             %li
-              %a{:href => "/contact"} Contact Us
+              %a.transition{:href => "/contact"} Contact Us
     
     = yield
 
