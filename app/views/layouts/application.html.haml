@@ -13,11 +13,14 @@
     %script{:src => "http://use.typekit.com/dnd0nfy.js", :type => "text/javascript"}
     :javascript
       try{Typekit.load();}catch(e){}
+
+    = javascript_include_tag "http://ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.min.js"
+    = javascript_include_tag :all
+    = javascript_include_tag "jquery.jeditable.mini.js"
+    = javascript_include_tag "bootstrap.js"
   %body
-    - if flash[:notice]
-      %div{:class => 'alert-message warning data-alert'}
-        %a{:href => '#', :class => 'close'}='x'
-        = flash[:notice]
+    - flash.each do |name, msg|
+      ="<p class=#{name} alert-message warning data-alert> #{msg} </p>"
 
     .topbar
       .topbar-inner
@@ -33,12 +36,12 @@
             %li
               %a{:href => "/partners"} Partner With Us
             %li.dropdown{"data-dropdown" => "dropdown"}
-              %a.dropdown-toggle{:href => "#"} Resources
+              %a.dropdown-toggle{:href => ""} Resources
               %ul.dropdown-menu
                 %li
-                  %a{:href => "patients"} For Patients
+                  %a{:href => "/patients"} For Patients
                 %li
-                  %a{:href => "professionals"} For Professionals
+                  %a{:href => "/professionals"} For Professionals
             %li
               %a{:href => "/faqs"} FAQs
             %li
@@ -46,7 +49,4 @@
     
     = yield
 
-    = javascript_include_tag "http://ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.min.js"
-    = javascript_include_tag :all
-    = javascript_include_tag "jquery.jeditable.mini.js"
-    = javascript_include_tag "bootstrap.js"
+
